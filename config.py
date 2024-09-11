@@ -1,16 +1,31 @@
 import os
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
+import streamlit as st
+
+INFURA_PROJECT_ID = st.secrets["general"]["INFURA_PROJECT_ID"]
+INFURA_PROJECT_SECRET = st.secrets["general"]["INFURA_PROJECT_SECRET"]
+PRIVATE_KEY = st.secrets["general"]["PRIVATE_KEY"]
+ACCOUNT_ADDRESS = st.secrets["general"]["ACCOUNT_ADDRESS"]
+CONTRACT_ADDRESS = st.secrets["general"]["CONTRACT_ADDRESS"]
+
+
+
+# INFURA_PROJECT_ID = INFURA_PROJECT_ID
+# INFURA_PROJECT_SECRET = INFURA_PROJECT_SECRET
+# PRIVATE_KEY = PRIVATE_KEY
+# ACCOUNT_ADDRESS = ACCOUNT_ADDRESS
+# CONTRACT_ADDRESS = CONTRACT_ADDRESS
 
 # Load environment variables from .env file
-load_dotenv()
+# load_dotenv()
 
-INFURA_PROJECT_ID = os.getenv("INFURA_PROJECT_ID")
-INFURA_PROJECT_SECRET = os.getenv("INFURA_PROJECT_SECRET")
+# INFURA_PROJECT_ID = os.getenv("INFURA_PROJECT_ID")
+# INFURA_PROJECT_SECRET = os.getenv("INFURA_PROJECT_SECRET")
 
-PRIVATE_KEY = os.getenv("PRIVATE_KEY")
-ACCOUNT_ADDRESS = os.getenv("ACCOUNT_ADDRESS")
+# PRIVATE_KEY = os.getenv("PRIVATE_KEY")
+# ACCOUNT_ADDRESS = os.getenv("ACCOUNT_ADDRESS")
 
-CONTRACT_ADDRESS = os.getenv("CONTRACT_ADDRESS")
+# CONTRACT_ADDRESS = os.getenv("CONTRACT_ADDRESS")
 
 CONTRACT_ABI = [
 	{
